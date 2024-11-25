@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Scope</title>
+</head>
+<body>
+    <script>
+        // Contoh dengan var
+        if (true) {
+            var x = 70;
+        }
+        console.log("var x:", x); // Akan menampilkan 10 karena x bersifat global.
+
+        // Contoh dengan let
+        if (true) {
+            let y = 80;
+        }
+        // console.log("let y:", y); // Akan menghasilkan error karena y hanya ada dalam blok if.
+
+        // Contoh dengan const
+        if (true) {
+            const z = 90;
+        }
+        // console.log("const z:", z); // Akan menghasilkan error karena z hanya ada dalam blok if.
+    </script>
+</body>
+</html>
