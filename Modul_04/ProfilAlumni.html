@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Alumni</title>
+    <link rel="stylesheet" href="ProfilAlumni.css"> 
+</head>
+<body>
+    <section class="search-section">
+        <h3>Pencarian Alumni</h3>
+        <input type="text" id="search-input" placeholder="Cari (nama/jurusan)" onkeyup="filterAlumni()">
+    </section>
+
+    <section class="alumni-info">
+        <h2>Daftar Alumni</h2>
+        <div class="alumni-container">
+            <div class="alumni-item" data-name="Hinata Shoyo" data-major="Sistem Informasi" data-batch="2023">
+                <img src="Profil_foto/hinatashoyo.jpg" alt="Hinata Shoyo" width="190">
+                <div class="alumni-details">
+                    <h4>Hinata Shoyo</h4>
+                    <p>Jurusan: Sistem Informasi</p>
+                    <p>Angkatan: 2023</p>
+                </div>
+            </div>
+            <div class="alumni-item" data-name="Inumaki" data-major="Teknik Informatika" data-batch="2023">
+                <img src="Profil_foto/inumaki.jpg" alt="Inumaki" width="190">
+                <div class="alumni-details">
+                    <h4>Inumaki</h4>
+                    <p>Jurusan: Teknik Informatika</p>
+                    <p>Angkatan: 2023</p>
+                </div>
+            </div>
+            <div class="alumni-item" data-name="Killua Zoldyck" data-major="Desain Komunikasi Visual" data-batch="2023">
+                <img src="Profil_foto/killua.jpg" alt="Killua Zoldyck" width="190">
+                <div class="alumni-details">
+                    <h4>Killua Zoldyck</h4>
+                    <p>Jurusan: Desain Komunikasi Visual</p>
+                    <p>Angkatan: 2023</p>
+                </div>
+            </div>
+            <div class="alumni-item" data-name="Kiyoko Shimizu" data-major="Teknik Sipil" data-batch="2023">
+                <img src="Profil_foto/kiyoko.jpg" alt="Kiyoko Shimizu" width="190">
+                <div class="alumni-details">
+                    <h4>Kiyoko Shimizu</h4>
+                    <p>Jurusan: Teknik Sipil</p>
+                    <p>Angkatan: 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <script src="ProfilAlumni.js"></script>
+    </footer>
+</body>
+</html>
