@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto Alumni UNIKU</title>
+    <style>
+        /* Style untuk modal */
+        .modal { 
+            display: none; 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7); 
+            justify-content: center; 
+            align-items: center; 
+        }
+        .modal-content { 
+            background: white; 
+            padding: 25px; 
+            border-radius: 10px;
+            position: relative;
+        }
+        .close { 
+            cursor: pointer; 
+            font-size: 30px; 
+            font-weight: bold;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: black;
+        }
+
+        /* Gallery container */
+        .gallery {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Individual gallery item */
+        .gallery-item {
+            text-align: center;
+            width: 150px;
+        }
+
+        /* Image styling */
+        .gallery img {
+            width: 100%;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        /* Pencarian alumni */
+        #searchInput {
+            margin: 20px;
+            display: block;
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            margin: 20px auto;
+        }
+
+        /* List alumni */
+        #alumniList {
+            margin-top: 20px;
+            text-align: center;
+        }
+        #alumniList li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Daftar Alumni UNIKU</h1>
+    
+    <!-- Input untuk Mencari Alumni -->
+    <input type="text" id="searchInput" placeholder="Cari Alumni..." />
+    
+    <!-- Galeri Foto Alumni -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="gallery/alumni1.jpg" alt="alumni1">
+            <p>Cecilia Aisyah Az Zahra</p>
+        </div>
+        <div class="gallery-item">
+            <img src="gallery/inumaki.jpg" alt="inumaki">
+            <p>Inumaki</p>
+        </div>
+        <div class="gallery-item">
+            <img src="gallery/killua.jpg" alt="killua">
+            <p>Killua Zoldyck</p>
+        </div>
+        <div class="gallery-item">
+            <img src="gallery/kiyoko.jpg" alt="kiyoko">
+            <p>Kiyoko Shimizu</p>
+        </div>
+    </div>
+
+    <!-- Daftar Alumni -->
+    <ul id="alumniList">
+        <li class="featured">Cecilia Aisyah Az Zahra</li>
+        <li>Inumaki</li>
+        <li class="featured">Killua Zoldyck</li>
+        <li>Kiyoko Shimizu</li>
+    </ul>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="Selected Photo" style="width: 100%;">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="TUGAS_05.js"></script> 
+</body>
+</html>
